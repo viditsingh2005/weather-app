@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App | Vidit Singh</title>
+
+    <link rel="stylesheet" href="5.css">
+</head>
+
+<body>
+
+    <!-- Background decoration -->
+
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="square square1"></div>
+
+
+    <!-- Main container -->
+
+    <main class="app">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <div>
+                <p class="mini-title">
+                    WEATHER APPLICATION
+                </p>
+
+                <h1>
+                    Weather<span>.</span>
+                </h1>
+            </div>
+
+            <div class="header-icon">
+                ☁️
+            </div>
+
+        </header>
+
+
+        <!-- Search -->
+
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter city name..."
+                    autocomplete="off"
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+
+            <button
+                id="locationBtn"
+                class="location-btn"
+            >
+                📍 Use My Location
+            </button>
+
+        </section>
+
+
+        <!-- Loading -->
+
+        <div id="loading" class="loading">
+
+            <div class="spinner"></div>
+
+            <p>
+                Loading weather...
+            </p>
+
+        </div>
+
+
+        <!-- Error -->
+
+        <div id="errorBox" class="error-box">
+
+            <p id="errorText">
+                Something went wrong.
+            </p>
+
+        </div>
+
+
+        <!-- Weather -->
+
+        <section
+            id="weatherContainer"
+            class="weather-container"
+        >
+
+            <!-- Main weather card -->
+
+            <div class="main-weather-card">
+
+                <div class="location">
+
+                    <span>
+                        📍
+                    </span>
+
+                    <div>
+
+                        <h2 id="cityName">
+                            Dehradun
+                        </h2>
+
+                        <p id="countryName">
+                            India
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="weather-main">
+
+                    <div
+                        id="weatherIcon"
+                        class="weather-icon"
+                    >
+                        ☀️
+                    </div>
+
+
+                    <div class="temperature">
+
+                        <h3 id="temperature">
+                            --°
+                        </h3>
+
+                        <p id="weatherDescription">
+                            Clear
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feels">
+
+                    Feels like
+                    <strong id="feelsLike">
+                        --°
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Weather information -->
+
+            <div class="details-grid">
+
+
+                <div class="detail-card">
+
+                    <div class="detail-icon">
+                        💧
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Humidity
+                        </p>
+
+                        <h3 id="humidity">
+                            --%
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="detail-card">
+
+                    <div class="detail-icon">
+                        💨
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Wind Speed
+                        </p>
+
+                        <h3 id="wind">
+                            -- km/h
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="detail-card">
+
+                    <div class="detail-icon">
+                        🌧️
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Precipitation
+                        </p>
+
+                        <h3 id="precipitation">
+                            -- mm
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="detail-card">
+
+                    <div class="detail-icon">
+                        ☁️
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Cloud Cover
+                        </p>
+
+                        <h3 id="cloud">
+                            --%
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Sunrise Sunset -->
+
+            <div class="sun-card">
+
+                <div>
+
+                    <span>
+                        🌅
+                    </span>
+
+                    <div>
+
+                        <p>
+                            Sunrise
+                        </p>
+
+                        <h3 id="sunrise">
+                            --
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        🌇
+                    </span>
+
+                    <div>
+
+                        <p>
+                            Sunset
+                        </p>
+
+                        <h3 id="sunset">
+                            --
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Forecast -->
+
+            <div class="forecast-section">
+
+                <h2>
+                    5-Day Forecast
+                </h2>
+
+
+                <div
+                    id="forecast"
+                    class="forecast-grid"
+                >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+
+        <footer>
+
+            <p>
+                Weather App
+            </p>
+
+            <p>
+                Designed & Developed by
+                <strong>
+                    Vidit Singh
+                </strong>
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="5.js"></script>
+
+</body>
+
+</html>
